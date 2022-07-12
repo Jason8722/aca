@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상단위 p.205~208</title>
+    <style>
+        div { width: 200px; height: 100px; }
+
+        #hex6 {background-color: #0000ff;}
+        #hex3 {background-color: #00f;}
+        #rgb {background-color: rgb(67, 105, 155);}        
+        #rgba {background-color: rgb(0,255,255,.2);}
+        #hsl {background-color: hsl(50,100%,50%);}
+        #hsla {background-color: hsla(50,100%, 50%, 0.5);}
+
+        #rgba_05{background-color: rgba(255, 0, 0, .5);}
+        #opacity_05 {background-color: red; opacity: .3;}
+    </style>
+</head>
+<body>
+    <div id="hex6">6자리 헥사코드(16진수)</div>
+    <div id="hex3">3자리 헥사코드(6자리축약)</div>
+    <div id="rgb">rgb코드</div>
+    <div id="rgba">rgba코드</div>
+    <div id="hsl">hsl코드</div>
+    <div id="hsla">hsla코드</div>
+    <hr>
+    <div id="rgba_05">rgba 투명도 50%</div>
+    <div id="opacity_05">opacity 투명도 50%</div>   
+</body>
+</html>
