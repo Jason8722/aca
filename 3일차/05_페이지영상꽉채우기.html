@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 영상 100% 채우기(인트로페이지, 메인페이지)</title>
+    <style>
+        #bg_video {
+            position: fixed;    left: 50%; top: 50%;
+            width: auto;    height: auto;
+            min-width: 100%;    min-height: 100%;
+            /* max-width: 100%;    max-height: 100%; */
+            transform: translate(-50%,-50%);
+        }
+
+        #container {
+            width: 450px;
+            height: 300px;
+            border: 3px solid white;
+            background-color: rgba(141, 17, 17, 0.445) ;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            color: wheat;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -150px 0 0 -225px;
+        }
+
+        #container h2 {
+            margin-bottom: 50px;
+            border: 3px solid white;            
+        }
+        #container a {
+            background-color: white; padding: 10px 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="bg_video" src="멀티미디어/video_sample.mp4" autoplay muted loop></video>
+    <div id="container">
+        <h1>hello!</h1>
+        <h2>Welcome to my website</h2>
+        <a href="#">click!</a>
+    </div>
+</body>
+
+</html>
