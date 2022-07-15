@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 p.367~372</title>
+    <style>
+        .container01 {width: 500px; height: 100px; background-color: #edd;}
+        .box01 {width: 100px; height: 100px; text-align: center; line-height: 100px; float: left;}
+        .box01:hover {background-color: red;}
+        /* 트랜지션을 호버에다가 걸면 올릴땐 시간이 적용되지만 내리면 hover속성이 아니므로 바로 사라짐 */
+        .duration_05 {background: hotpink; transition-duration: .5s;}
+        .duration_2 {background: orange; transition-duration: 6s;}
+
+        .property {width: 400px; height: 150px; background-color: skyblue; font-size: 30px; 
+            text-align: center; line-height: 150px; font-weight: bold; 
+            transition: 4s;
+            transition-property: background-color;}
+        .property:hover {border:1px solid orange; color: red; }
+
+        .container02 {width: 500px; height: 80px; background-color: #edd;}
+        .box02 {width: 100px; height: 40px; text-align: center; line-height: 40px; transition-duration: 2s;}
+        .box02:hover {width: 500px;}
+        .delay_05 {background: hotpink; transition-delay: .5s;}
+        .delay_2 {background: orange; transition-delay: 2s;}
+
+        .box03 {width: 100px; height: 40px; text-align: center; line-height: 40px;
+        transition-duration: 4s;}
+        .box03:hover {width: 500px;}
+        .ease {background-color: hotpink; transition-timing-function: ease;}
+        .ease-in {background-color: rgb(105, 255, 205);transition-timing-function: ease-in;}
+        .ease-out {background-color: rgb(66, 146, 42);transition-timing-function: ease-out;}
+        .ease-in-out {background-color: rgb(36, 50, 129);transition-timing-function: ease-in-out;}
+        .linear {background-color: rgb(105, 255, 193);transition-timing-function: linear;}
+        .cubic-bezier {background-color: rgb(255, 240, 105);transition-timing-function: cubic-bezier(0,1.16,0,-0.3);}
+        
+        .transition {width: 400px; height: 150px; background-color: skyblue; font-size: 30px; text-align: center; line-height: 150px; font-weight: bold; border: 10px solid lime;
+            transition: 2s ease 1s;} 
+        .transition:hover {background-color: orange; color: red; border-color: cyan; border-radius: 50px;}
+    </style>
+</head>
+<body>
+    <h1>트랜지션</h1>
+    <h2>transition-duration</h2>
+    <h3>애니메이션이 진행되는 시간</h3>
+    <p>시간 단위는 초(second = s) 또는 밀리초(millisecond = ms = 1/1000초)<br>
+    1초 아래의 숫자는 0을 빼고 입력해도 됩니다.</p>
+    <div class="container01">
+        <div class="box01 duration_05">0.5초!</div>
+        <div class="box01 duration_2">2초!</div>
+    </div>
+
+    <h2>transition-property</h2>
+    <h2>원하는 트랜지션 효과를 따로 줄 수 있습니다.</h2>
+    <p>transition-property: all; 요소의 모든 속성에 트랜지션 지정(기본값)<br>
+    transition-property: color; 요소의 글자색에만 트랜지션 지정<br>
+    transition-property: color,border-color; 요소의 글자색, 테두리색에 트랜지션 지정<br>
+    transition-property: none; 트랜지션 효과 적용하지 않음<br>
+    기본적으로 transition-duration 속성과 함께 사용되어야 확인 가능</p>
+    <div class="property">마우스를 올려주세요!</div>
+
+    <H2>transition-delay</H2>
+    <h3>트랜지션의 지연 시간 설정(이벤트 발생 후 기다리는 시간)</h3>
+    <div class="container02">
+        <div class="box02 delay_05">0.5초</div>
+        <div class="box02 delay_2">2초</div>
+    </div>
+    
+    <h2>transition-timing-function</h2>
+    <h3>트랜지션이 진행되는 속도(변화가 일어나는 속도)를 조절합니다.</h3>
+    <p>ease: 시작은 느리게, 빨라졌다가 종료지점에서 다시 느려짐(기본값)<br>
+        ease-in: 시작을 느리게<br>
+        ease-out: 종료를 느리게<br>
+        ease-in-out: 시작지점과 종료지점의 변화가 천천히 진행<br>
+        linear: 시작부터 종료까지 동일한 속도<br>
+        cubic-bezier: 처음과 끝의 속도를 0과 1 사이의 수치를 이용해 함수값을 직접 지정
+        (https://cubic-bezier.com/#.17,.67,.83,.67)
+    </p>
+    <div class="box03 ease">ease</div>
+    <div class="box03 ease-in">ease-in</div>
+    <div class="box03 ease-out">ease-out</div>
+    <div class="box03 ease-in-out">ease-in-out</div>
+    <div class="box03 linear">linear</div>
+    <div class="box03 cubic-bezier">cubic-bezier</div>
+
+    <h2>transition속성 한꺼번에 쓰기</h2>
+    <h3>transition: property duration timing-fuction delay (순서 상관 X, duration delay 만 순서대로)</h3>
+    <p>꼭 모두 다 적어야 하는 것은 아닙니다. 생략된 값은 기본값으로 적용<br>
+    그래서 보통 property와 duration을 많이 작성<br>
+    기본값 : all 0 ease 0</p>
+    <div class="transition">마우스를 올려주세요!</div>
+</body>
+</html>
