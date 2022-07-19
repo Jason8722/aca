@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 데스크탑 */
+    #wrap {
+        width: 1200px;
+        height: 1240px;
+        background-color: rgba(0, 0, 0, .3);
+        margin: auto;
+    }
+
+    header {
+        width: 1200px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, .2);
+    }
+
+    nav {
+        width: 1200px;
+        height: 40px;
+        background-color: rgba(0, 255, 0, .2);
+    }
+
+    nav ul li {
+        width: 100px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, .2);
+        float: left;
+    }
+
+    section {
+        width: 1200px;
+        height: 600px;
+        background-color: rgba(0, 0, 255, .2);
+    }
+
+    article {
+        width: 600px;
+        height: 200px;
+        background-color: rgba(255, 255, 0, .2);
+        float: left;
+    }
+
+    footer {
+        width: 1200px;
+        height: 100px;
+        background-color: rgba(0, 255, 255, .2);
+        clear: both;
+    }
+
+
+
+
+/* 데스크탑 width:1200px */
+
+/* 태블릿 */
+@media screen and (max-width: 959px) {
+    #wrap {
+        width: 768px;
+        height: 1040px;
+    }
+
+    header {
+        width: 768px;
+        height: 60px;
+    }
+
+    nav {
+        width: 768px;
+        height: 80px;
+    }
+
+    nav ul li {
+        width: 128px;
+        height: 40px;
+
+    }
+
+    section {
+        width: 768px;
+        height: 400px;
+    }
+
+    article {
+        width: 384px;
+        height: 200px;
+    }
+
+    footer {
+        width: 768px;
+        height: 100px;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+    #wrap {
+        width: 360px;
+        height: 1500px;
+    }
+
+    header {
+        width: 360px;
+        height: 60px;
+    }
+
+    nav {
+        width: 360px;
+        height: 240px;
+    }
+
+    nav ul li {
+        width: 180px;
+        height: 40px;
+    }
+
+    section {
+        width: 360px;
+        height: 300px;
+    }
+
+    article {
+        width: 360px;
+        height: 200px;
+    }
+
+    footer {
+        width: 360px;
+        height: 100px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 모바일 */
+#wrap {
+    width: 360px;
+    height: 4000px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#wrap>:not(header) {
+    text-align: center;
+}
+
+header {
+    width: 340px;
+    height: 120px;
+    background-color: antiquewhite;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+header:hover {
+    background-color: aqua;
+}
+
+nav ul li {
+    width: 360px;
+    height: 30px;
+    float: left;
+    background-color: green;
+    border-radius: 5px;
+}
+
+
+
+section {
+    display: none;
+}
+
+article {
+    width: 340px;
+    height: 623px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: skyblue;
+    float: left;
+}
+
+.main_img {
+    width: 340px;
+    height: 423px;
+    background-color: rgb(110, 29, 150);
+}
+
+.main_caption {
+    width: 340px;
+    height: 200px;
+    background-color: brown;
+}
+
+
+
+footer {
+    width: 320px;
+    height: 200px;
+    padding: 20px;
+    background-color: violet;
+    clear: both;
+}
+
+
+#bt {
+    width: 360px;
+    padding-left: 45px;
+}
+
+.btt {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    margin: 15px;
+    float: left;
+}
+
+
+/* 태블릿 */
+@media screen and (min-width:600px) and (max-width:959px) {
+
+    #wrap {
+        width: 600px;
+        height: 2350px;
+    }
+
+    header {
+        width: 580px;
+    }
+
+
+    nav ul li {
+        width: 150px;
+        border-radius: 5px;
+    }
+
+
+
+    section {
+        display: block;
+        width: 600px;
+        height: 313px;
+        margin-bottom: 50px;
+        background-color: palevioletred;
+    }
+
+    article {
+        width: 280px;
+        height: 448px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+
+    .main_img {
+        width: 280px;
+        height: 348px;
+    }
+    
+    .main_caption {
+        width: 280px;
+        height: 100px;
+    }
+    
+
+    #bt {
+        display: none;
+    }
+
+
+    footer {
+        width: 560px;
+        height: 100px;
+        padding: 20px;
+    }
+}
+
+
+/* 데스크탑 */
+@media screen and (min-width:960px) {
+    #wrap {
+        width: 960px;
+        height: 1200px;
+    }
+
+
+
+    header {
+        width: 940px;
+    }
+
+
+
+    nav ul li {
+        width: 240px;
+        border-radius: 5px;
+    }
+
+
+
+    section {
+        display: inline-block;
+        width: 960px;
+        height: 500px;
+        background-color: palevioletred;
+        margin-bottom: 50px;
+    }
+
+    article {
+        width: 225px;
+        height: 380px;
+        margin-left: 0;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    article:nth-child(4n+3) {
+        margin-right: 0;
+    }
+
+    #bt {
+        display: none;
+    }
+
+
+    footer {
+        width: 920px;
+        height: 100px;
+        padding: 20px;
+
+    }
+}
