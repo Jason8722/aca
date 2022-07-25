@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99</title>
+</head>
+<body>
+    <script>   
+
+        // 조건문(if, else, else if) : 조건식의 값이 참(true)인지, 거짓(false)인지에 따라 자바스크립트 코드를 제어
+
+
+
+
+        // if문 : 조건식의 값이 true이면 실행, false이면 실행하지 않고 끝
+        // if(조건식) {
+        //   실행할 명령 코드   
+        // };
+
+
+        // var num = 0;
+        // if(num < 15) {
+        //     document.write("조건문의 값이 true이면 이 문구가 출력됩니다.")
+        // }
+
+        // if(0) {
+        //     document.write("숫자 0은 false를 반환하기 때문에 이 문구는 출력되지 않습니다.")
+        // }
+
+        // var walkAmount = prompt("당신의 하루 걷는 양은 몇 보 인가요?")
+        // // walkAmount라는 변수에 prompt로 사용자에게 입력받은 값을 저장
+
+        // if (walkAmount > 10000) {
+        //     document.write("매우 좋은 습관을 가지셨군요!");
+        // }
+        // document.write("=======END========")
+
+
+
+
+
+
+        // else문 : 조건식의 값이 true 이면 if문 안의 코드를 실행, 값이 false일 때 else문 안의 코드를 실행
+
+        // if(조건식) {
+        //     조건식이 true일 때 명령
+        // } else {
+        //     조건식이 false일 때 명령
+        // }
+
+        // var num = prompt("당신이 좋아하는 숫자는?");
+        // if (num % 2 == 0 ) {
+        //     document.write("짝수를 좋아하는군요")
+        // } else {
+        //     document.write("홀수를 좋아한는군요?>")
+        // }
+        // 사용자가 입력한 숫자를 2로 나눴을때 나머지가 0이면 짝수, 그렇지 않으면 홀수
+
+        // var result = confirm("정말 회원 탈퇴 하시겠습니까?");
+        // if (result) {
+        //     document.write("회원 탈퇴가 완료되었습니다.")
+        // } else {
+        //     document.write("회원 탈퇴가 취소되었습니다.")
+        // }
+        // confirm() 메서드는 사용자에게 확인/취소 버튼이 있는 창을 띄워 값을 입력받음. 확인(true), 취소(false)값을 반환. 값에 따라 다른 화면으로 넘어가게끔 코딩
+
+
+
+        // else if문 : if 조건식이 true이면 그 안의 코드만 실행하고 끝. false일 때 그 다음의 else if 조건식을 판단,... 차례차례 체크 후 하나도 true가 없으면 마지막의 else문을 실행
+
+        // if(조건식1) {
+        //     if조건식이 true일 때 실행할 명령
+        // } else if(조건식2) { 
+        //     조건식2가 true일 때 실행할 명령
+        // } else if(조건식3) {
+        //     조건식3이 true일 때 실행할 명령
+        // } else {
+        //     하나도 true가 없을 때 마지막의 else문 안의 명령을 실행
+        // }
+
+        // var month = prompt("현재는 몇월입니까?");
+        // if (month >= 3 && month <=5) {
+        //     document.write("봄")
+        // } else if(month >= 6 && month <= 8) {
+        //     document.write("여름")
+        // } else if(month >= 9 && month <= 11) {
+        //     document.write("가을")
+        // } else {
+        //     document.write("겨울")
+        // }
+
+        // 중첩 if문 : 조건문 안에 또 조건문이 있는 경우. 바깥 조건식이 true여야만 안의 조건식을 실행. 만약 안쪽의 조건식이 false라면 바깥쪽 조건식 명령만 실행하고 끝.
+
+        // if(조건식1) {
+
+        //     if(조건식2) {
+        //         조건식2가 true일 때 실행할 명령
+        //     } else {
+        //         조건식2가 false일 때 실행할 명령
+        //     }
+
+        //     조건식1이 true일 때 실행할 명령
+        // }   else {
+        //     조건식1이 false일 때 실행할 명령
+        // }
+
+        // var id = "abc1234";
+        // var pw = "123456";
+        // var userId = prompt("ID를 입력하세요");
+        // var userPw = prompt("PW를 입력하세요");
+        // if(userId == id) {
+
+        //     if(userPw == pw) {
+        //         document.write("로그인 완료")
+        //     } else {
+        //         alert("비밀번호가 틀렸습니다.")
+        //         location.reload();
+        //     }
+
+        // }  else { 
+        //     alert("존재하지 않는 ID입니다.")
+        //     location.reload(); // 브라우저 새로고침
+        // }
+    
+
+
+
+
+        // // p.484
+        // var userNumber = prompt("숫자를 입력하세요.");
+
+        // if(userNumber !== null)
+        // (userNumber % 3 === 0) ? alert("3의 배수 입니다") : alert("3의 배수가 아닙니다.");
+        // // 삼항조건 연산자를 이용한 조건문
+
+        // else
+        // alert("입력이 취소되었습니다.");
+        //     //실행할 명령이 한줄인 경우에는 중괄호{}없이 작성할 수 있다.
+
+        
+
+
+
+        // //switch문 : 처리할 명령이 많을 때
+        // switch(조건) {
+        //     case 값1 : 명령1
+        //     break
+        //     case 값2 : 명령2
+        //     .
+        //     .
+        //     .
+        //     default : 기본명령
+
+        // p.488
+        // var session = prompt("관심 세션을 선택해주세요. 1-마케팅, 2-개발, 3-디자인");
+        // switch(session) {
+        //     case "1" : document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다</p>");
+        //     break;
+        //     case "2" : document.write("<p>개발 세션은 <strong>202호</strong>에서 진행됩니다</p>");
+        //     break;
+        //     case "3" : document.write("<p>디자인 세션은 <strong>203호</strong>에서 진행됩니다</p>");
+        //     break;
+        //     default : alert("잘못 입력!")
+        // }
+
+
+
+        // // 반복문(for) : 조건식을 계속 반복할 때, 한 번의 코드로 반복시킬 수 있다.
+        // for(초깃값; 조건식; 증감식) {
+        //     초깃값에서 출발해 조건식에 만족될 때까지 증감식을 이용해 반복될 명령
+        // }
+
+
+
+        // for(var i=-20; i < 10; i++) {
+        //     document.write(i+"<br>")
+        // }
+        // // for문에서는 관례적으로 변수명을 i로 사용. index의 첫글자. 다른 변수명도 상관없음. index는 메모리의 저장 공간의 번호. 컴퓨터는 저장 곤간의 번호를 0부터 붙임.
+
+        // for(var i = 0; i < 5; i++) {
+        //     document.write("변수가 추가되는 만큼 실행된다!<br>")
+        // }
+        // i라는 변수를 만들고 0을 저장
+        // i가 5보다 작을 때까지
+        // i에 1씩 추가하면서 반복
+        // 여기에서 0~4(index번호)가 변수에 저장되면서 다섯 번 실행
+        // 만약 for문을 사용하지 않고 해당 출력문을 써야 했다면
+
+        // var i,j;
+        // for(i = 1; i <= 9; i++) {
+        //     document.write("<h3>" + i + "단</h3>");
+        //     for(j = 1; j <= 9; j++) {
+        //         document.write(i + "x" + j + "=" + i*j + "<br>")
+        //     }
+        // }
+
+            
+
+        // while문 p.498
+        // 조건이 true인 동안 명령 반복
+        // while(조건) {
+        //     실행할 명령
+        // }
+
+        // do while문
+        // 명령 한번 실행 후 조건 체크, 명령 최소 한번 실행
+        // do {
+        //     명령
+        // } while(조건)
+
+        // var i=1, j=1;
+        // while(i < 10) {
+        //     j=1;
+        //  
+
+        //     while(j < 10) {
+                
+        //         document.write(i + "x" + j + "=" + i*j + "<br>")
+        //         j++;
+        //     }
+
+        //     i++
+        // }
+
+
+        
+
+        // // p.499
+        // var n = prompt("숫자를 입력하세요.");
+        // var msg = "";
+
+        // if(n !== null) { //취소 버튼을 누르지 않았는지 체크
+        //     var nFact = 1;
+        //     var i = 1;
+            
+        //     while(i <= n) {
+        //         nFact *= i;
+        //         i++;
+        //     }
+        //     msg = n + "! = " + nFact; // 결괏값을 표시할 문자열.
+        // } else {
+        //     msg = "값을 입력하지 않았습니다."
+        // }
+        
+        // document.write(msg);
+
+
+        // break문 : 조건식과 상관 없이 강제로 반복문 종료 p.500
+
+        // for(var i = 0; i < 10; i++) {
+        //     if(i == 6) break;
+        //     document.write("출력" + i + "<br>");
+        // }
+
+        // continue문 : continue문 다음에 오는 식은 무시하고 바로 증감식으로 이동, 실행
+        for(var i = 0; i < 10; i++) {
+            if(i % 2 == 0) continue;
+            document.write("출력" + i + "<br>")
+        }
+
+    </script>
+</body>
+</html>
