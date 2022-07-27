@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 기초</title>
+    <script>
+    //    자바스크립트는 원래 head에 삽입하는게 원칙(과거)
+    //    그러나 DOM엘리먼트 선택 시 선택할 대상이 없으면(아직 작성되지 않은 상태)
+    //    코드를 읽은 후 끝나버리기 때문에 실행이 안되서 오류가 생길 수 있다.
+    //    1.<head>에 넣되, window.onload = function() { 자바스크립트 코드 입력 } 
+    //        웹브라우저의 모든 구성요소가 로딩이 끝난 후 스크립트를 호출
+    //    ★2.<body>안에, /body 태그의 바로 위에 넣는다.
+    //        브라우저의 모든 오브젝트를 불러들인 다음에 읽어내기 때문에 오류가 생길 일이 없다.
+
+    </script>
+</head>
+<body>
+    <input type="button" onclick="window.alert('버튼을 클릭했다!');" value="클릭!">
+    <!-- inline방식은 태그에 직접 자바스크립트를 기술하는 방식.
+         태그에 연관딘 스크립트가 분명하게 드러난다는 장점이 있지만 정보와 제어가 섞여있기 때문에 정보로서의 가치가 떨어지며, 되도록 사용 지양 -->
+
+    <!-- html태그와 js코드를 분리할 수 있어 주로 사용하는 방법 -->
+    <script>
+        /* window.alert("안녕하세요");  window객체는 생략 가능*/
+        // alert("아녕");
+        // document.write("안녕");
+/*         document.write('"안녕"하세요');
+        document.write("'안녕'하세요");
+        document.write("\"안녕\"하세요"); //쌍따옴표 그대로 표시하고 싶을 때 역슬래시를 앞에 붙여줌
+        console.log("콘솔창에 이렇게 결갓값을 띄울 수 있습니다.");
+        console.log(10+3);
+        console.log("10+3"); */
+
+
+        var age = prompt("당신의 나이는?","0");
+        if(age >= 20) {
+            document.write("당신은 성인입니다?");
+        } else {
+            document.wrtie("당신은 미성년자입니다?");2
+        }
+
+    </script>
+
+    <!-- js를 별도의 파일로 분리해 보다 엄격하게 정보와 제어를 분리할 수 있고,
+         하나의 js 파일을 여러 웹페이지에서 로드해서 js의 재활용성을 높임
+    캐시를 통해 속도의 향상, 전송량의 경량화 도모 -->
+<!--     <script src="jstest.js"></script> -->
+    <!--script태그에 src속성을 이용해 스크립트 파일을 불러오는 경우, 태그 사이에 값을 입력하면 안대!!!
+    불러오거나 / 작성하거나 둘 중 하나만 하기! -->
+</body>
+</html>

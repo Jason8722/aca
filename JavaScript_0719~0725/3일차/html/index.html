@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="css/style_flex.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/6d6ba2de03.js" crossorigin="anonymous"></script>
+
+    <!-- 파비콘 세트 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/faviconms-icon-144x144.png">
+<meta name="theme-color" content="#d81f26">
+</head>
+
+<body>
+    <header id="header">
+        <div class="center_wrapper">
+            <div id="top_logo">
+                <h1><a href="index.html"><img src="img/Netflix_2015_logo.svg" alt=""></a></h1>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <input type="search"><button><i class="fa-solid fa-magnifying-glass"></i>
+                            <span>검색</span></button>
+
+                        <!--   <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>검색</span>
+                    </a> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bell"></i>
+                            <span>알림</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span>내정보</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>메뉴</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main_visual">
+        <div id="main_visual_video"><iframe width="560" height="315" src="https://www.youtube.com/embed/S733LM9Hnsk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+        <div id="main_visual_content">
+            <div class="center_wrapper">
+            <h2>이상한 변호사 우영우 (Extraordinary Attorney Woo)</h2>
+            <p class="visual_story">천재적인 두뇌의 소유자 우영우. 대형 로펌의 신입 변호사이자 자폐 스펙트럼 장애를 가진 여성으로서 법정 안팎에서 다양한 난관을 헤쳐간다.
+            </p>
+            <p class="visual_info">출연: 박은빈, 강태오, 강기영
+                장르: TV 프로그램·법정, 한국 드라마, 사회 문제를 다룬 드라마
+                시리즈 특징: 감명을 주는, 진심 어린
+            </p>
+            <button class="visual_play_btn"><i class="fa-solid fa-play"></i> 재생</button>
+        </div>
+        </div>
+    </section>
+
+    <nav id="lnb">
+        <ul>
+            <li><a href="#">시리즈</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">NEW! 요즘 대세 콘텐츠</a></li>
+            <li><a href="#">내가 찜한 콘텐츠</a></li>
+            <li><a href="#">음성 및 자막</a></li>
+        </ul>
+    </nav>
+
+    <section id="main_cont">
+        <div class="center_wrapper">
+        <div id="main_cont_left">
+            <div id="now_playing_cont" class="content_padding">
+                <h2>시청중인 콘텐츠</h2>
+                <div id="now_cont_box" class="scroll_bar">
+                    <div id="now_cont_container">
+                        <ul>
+                            <li><a href="#"><img src="img/my_content_01.webp" alt=""></a></li>
+                            <li><a href="#"><img src="img/my_content_02.webp" alt=""></a></li>
+                            <li><a href="#"><img src="img/my_content_03.webp" alt=""></a></li>
+                            <li><a href="#"><img src="img/my_content_04.webp" alt=""></a></li>
+                            <li><a href="#"><img src="img/my_content_05.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="img/my_content_06.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="news" class="content_padding">
+                <h2>NEWS</h2>
+                <div id="news_box" class="scroll_bar">
+                    <h3>넷플릭스 추천, 7월 첫째 주 어떤 신작이 나왔을까?
+                    </h3>
+
+                    <h4># 삶을 즐기기로 한 순간 유령이 되어버렸다. <mark>유령인데 어쩌라고</mark></h4>
+                    <p>
+                        넷플릭스 대표 하이틴 영화 &lt;내가 사랑했던 모든 남자들에게&gt;에서 사랑스러운 매력을 뽐냈던 라나 콘도어가 색다른 매력의 하이틴 코미디 시리즈 &lt;유령인데
+                        어쩌라고&gt; 에서 인기를
+                        얻고 싶은 유령으로 돌아온다. <br>
+                        내세울 건 공부밖에 없는 단짝 에리카와 지아는 졸업을 앞두고 학교생활을 제대로 즐겨보기로 한다.<br>
+                        과거의 mark 모습은 벗어던지고 자신감 넘치는 삶을 살기로 한 순간, 어처구니 없게도 에리카는 사고로 유령이 되고 만다.<br>
+                        하지만 살아있을 때처럼 걷고 말하고, 심지어 다른 사람들 눈에 보이기까지 하는 에리카는 이승에 온전한 모습으로 머물기 위해 죽기 전 마지막 소원이었던
+                        ‘인기’를 얻으려 한다.<br>
+                        지옥에서도 포스팅할 기세로 인플루언서가 되려는 에리카의 모습이 지아는 점점 낯설게만 느껴진다.<br>
+                        과연 에리카는 바람대로 인기를 얻어 이승에 머물 수 있을까?
+                    </p>
+                    <br>
+
+                    <h4># 때로 이별은 단지 시작일 뿐이다. 헬로, 굿바이, 그리고 그 사이의 모든 것
+                    </h4>
+                    <p>
+                        &lt;내가 사랑했던 모든 남자들에게&gt; 제작진이 선사하는 또 하나의 매력적인 하이틴 로맨스 영화 &lt;헬로, 굿바이, 그리고 그 사이의 모든 것&gt;이
+                        공개된다.<br>
+                        서로의 앞날을 응원하며 대학에 들어가기 전 헤어지기로 약속한 클레어와 에이던은 커플로 보내는 마지막 밤을 기념하며 추억을 되짚어보는 작별 데이트에 나선다.<br>
+                        두 사람은 이별 계약을 하면 후회도, 마음의 상처도 없으리라 생각했지만 결정적인 순간을 마주할 때마다 서로를 향한 진실된 마음을 돌아보며 가슴 아파한다.<br>
+                        이들의 끝은 어떤 모습을 맞이할까.<br>
+                        &lt;전혀 아니다, 별로 아니다, 가끔 그렇다, 항상 그렇다&gt;에서 주인공 어텀 캘러한을 연기한 탈리아 라이더와 &lt;내가 사랑했던 모든 남자들에게: 언제나 그리고
+                        영원히&gt;에서 주인공의 첫사랑 존을 연기한 조던 피셔가 이별과 만남의 경계에서 고민하는 커플, 클레어와 에이든을 연기한다.
+                    </p>
+                    <br>
+
+                    <h4># 지도가 끝나는 곳에서 진정한 모험은 시작되지. 씨 비스트</h4>
+                    <p>
+                        넷플릭스 영화 &lt;씨 비스트&gt;는 바다에 무시무시한 괴물들이 출몰하던 시대, 전설적인 괴물 사냥꾼 제이콥 홀랜드와 그의 배에 몰래 숨어든 소녀 메이지 브럼블의
+                        대항해를
+                        그린 애니메이션이다.<br>
+                        제이콥과 같은 괴물 사냥꾼이 되길 선망하는 메이지는 사람들의 목숨을 위협하는 ‘씨 비스트’(바다 괴물)를 해치워 달라는 왕과 왕비의 간청으로 바다에 나선 제이콥의
+                        모험에 함께한다.<br>
+                        사냥 배에 타는 것도, 괴물 사냥꾼이 되겠다는 것도, 바다 괴물을 반려동물 삼는 것도 안 된다고 하는 제이콥과 함께하며 메이지는 천차만별의 바다 괴물을 마주치고
+                        미지의 바다를 누빈다.<br>
+                        제87회 아카데미 시상식에서 장편 애니메이션을 수상한 &lt;빅 히어로&gt;와 바다가 선택한 소녀 모아나를 통해 신비로운 바다의 모습을 그려냈던 &lt;모아나&gt;의
+                        크리스 윌리엄스
+                        감독이 연출을 맡았다.<br>
+                        영화 &lt;스타트렉&gt; 시리즈, &lt;토르: 라그나로크&gt;의 칼 어번, 넷플릭스 시리즈 &lt;더 크라운&gt;, 영화 &lt;모비우스&gt;의 자레드 해리스
+                        등이 성우로 참여해
+                        캐릭터에 숨결을 불어넣는다.<br>
+                        지도 밖 세계, 진정한 모험이 시작되는 바다로 모두 함께 출항해보자.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main_cont_right">
+            <div id="login">
+                <div class="login_box">
+                    <label for="user_id">ID</label><input type="text" name="" id="user_id">
+                </div>
+                <div class="login_box">
+                    <label for="user_PW">PW</label><input type="password" id="user_PW">
+                </div>
+                <div class="login_btn">
+                    <button>login</button>
+                    <button>join</button>
+                </div>
+            </div>
+            <div id="new_cont" class="content_padding">
+                <h2>NEW! 요즘 대세 콘텐츠</h2>
+                <div id="new_cont_box" class="scroll_bar">
+                    <ul>
+                        <li>
+                            <div class="new_cont_img">
+                                <img class="rank_img" src="img/rank_01.svg" alt="요즘 대세 콘텐츠 1">
+                                <img class="poster_img" src="img/new_content_01.webp" alt="이상한 나라의 수학자">
+                            </div>
+                            <div class="new_cont_text">
+                                <h3>이상한 나라의 수학자</h3>
+                                <p class="new_cont_summery">
+                                    2022 / 12세 / 1시간 57분
+                                </p>
+                                <p class="new_cont_info">
+                                    출연 : 최민식, 김동휘, 박병은..
+                                    <br>장르 : 드라마 장르
+                                    <br>영화 특징 : 힐링, 감명을 주는, 진심 어린
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new_cont_img">
+                                <img class="rank_img" src="img/rank_02.svg" alt="요즘 대세 콘텐츠 2">
+                                <img class="poster_img" src="img/new_content_02.webp" alt="씽2게더">
+                            </div>
+                            <div class="new_cont_text">
+                                <h3>씽2게더</h3>
+                                <p class="new_cont_summery">
+                                    2021 / 전체 / 1시간 49분
+                                </p>
+                                <p class="new_cont_info">
+                                    출연 : 매튜 맥커너히, 리즈 위더스푼, 스칼렛 요한슨..
+                                    <br>장르 : 뮤지컬, 어린이 음악, 가족 영화
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new_cont_img">
+                                <img class="rank_img" src="img/rank_03.svg" alt="요즘 대세 콘텐츠 3">
+                                <img class="poster_img" src="img/new_content_03.webp" alt="레전드 오브 타잔">
+                            </div>
+                            <div class="new_cont_text">
+                                <h3>레전드 오브 타잔</h3>
+                                <p class="new_cont_summery">
+                                    2016 / 12세 / 1시간 49분
+                                </p>
+                                <p class="new_cont_info">
+                                    출연 : 알렉산데르 스카르스고르드, 새뮤얼 L. 잭슨, 마고 로비..
+                                    <br>장르 : 미국 영화, 시대물, 도서 원작 영화
+                                    <br>영화 특징 : 흥미진진
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new_cont_img">
+                                <img class="rank_img" src="img/rank_04.svg" alt="요즘 대세 콘텐츠 4">
+                                <img class="poster_img" src="img/new_content_04.webp" alt="어부바">
+                            </div>
+                            <div class="new_cont_text">
+                                <h3>어부바</h3>
+                                <p class="new_cont_summery">
+                                    2022 / 전체 / 1시간 46분
+                                </p>
+                                <p class="new_cont_info">
+                                    출연 : 정준호, 최대철, 리 엘빈..
+                                    <br>장르 : 코미디
+                                    <br>영화 특징 : 진심 어린
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new_cont_img">
+                                <img class="rank_img" src="img/rank_05.svg" alt="요즘 대세 콘텐츠 5">
+                                <img class="poster_img" src="img/new_content_05.webp" alt="라이즈 로어 리볼트">
+                            </div>
+                            <div class="new_cont_text">
+                                <h3>라이즈 로어 리볼트</h3>
+                                <p class="new_cont_summery">
+                                    2022 / 15세 / 3시간 5분
+                                </p>
+                                <p class="new_cont_info">
+                                    출연 : N.T.R 라오 주니어, 람 차란, 아제이 데브간..
+                                    <br>장르 : 인도 작품, 액션 & 어드벤처
+                                    <br>영화 특징 : 아드레날린 폭발
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new_cont_img">
+                                <img class="rank_img" src="img/rank_06.svg" alt="요즘 대세 콘텐츠 6">
+                                <img class="poster_img" src="img/new_content_06.jpg" alt="씨 비스트">
+                            </div>
+                            <div class="new_cont_text">
+                                <h3>씨 비스트</h3>
+                                <p class="new_cont_summery">
+                                    2022 / 전체 / 1시간 59분
+                                </p>
+                                <p class="new_cont_info">
+                                    출연 : 칼 어번, 재리스 에인절 하터, 자레드 해리스..
+                                    <br>장르 : 가족 영화, 미국 영화, 어린이 & 가족 영화
+                                    <br>영화 특징 : 기분 좋아지는, 진심 어린, 흥미진진
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer id="footer">
+        <div class="center_wrapper">
+
+        
+        <nav id="fnb">
+            <ul>
+                <li><a href="#">회사정보</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </nav>
+        <div id="sns">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>페이스북</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>인스타</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>트위터</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i><span>유튜브</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p id="company_info">
+            넷플릭스서비시스코리아 유한회사 <br>
+            통신판매업신고번호: 제2018-서울종로-0426호<br>
+            전화번호: 080-001-9587<br>
+            대표: 레지널드 숀 톰프슨<br>
+            이메일 주소: korea@netflix.com<br>
+            주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161<br>
+            사업자등록번호: 165-87-00119<br>
+            클라우드 호스팅: Amazon Web Services Inc.<br>
+            공정거래위원회 웹사이트
+        </p>
+    </div>
+    </footer>
+</body>
+
+</html>

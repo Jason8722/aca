@@ -1,0 +1,4 @@
+강사 폰트어썸 Kit (head 내에 넣고 사용하세요)
+http://fontawesome.com/
+
+<script src="https://kit.fontawesome.com/f0e73cfa04.js" crossorigin="anonymous"></script>

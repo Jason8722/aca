@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TEST</title>
+    <script>
+        Window.onload = function() {
+
+            // 
+
+            p1 = document.getElementById("p1");
+
+            function hideText() {
+                p1.style.visibility  = "hidden";
+            };
+            function showText() {
+                p1.style.visvility = "visible";
+            };
+
+        }
+    </script>
+</head>
+<body>
+    <!-- <p id="aaa" class="bbb" title="ccc">헬로</p>
+    <img id="image" title="원래타이틀"> -->
+
+
+    <!-- li선택 및 색상 변경 -->
+    <!-- <ul>
+        <li id="listcolor">떡볶이</li>
+        <li>튀김</li>
+        <li>순대</li>
+    </ul> -->
+
+    <!-- <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';   
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'red';   
+    "> -->
+
+    <p id="p1">Hide버튼을 누르면 글자가~
+
+    <input type="button" value="Hide" id="hideBtn" onclick="hideText()">
+    <input type="button" value="Show" id="showBtn" onclick="showText()">
+</p>
+
+    <script>
+        // document.getElementById("aaa").innerHTML = "aaa라는 아이디를 찾아 내용 변경 및 삽입";
+        // document.getElementsByClassName("bbb")[0].innerHTML = "클래스 이름으로 찾아 내용 변경 및 삽입";
+        // document.getElementsByTagName("p")[0].innerHTML = "태그 중 인덱스 번호로 찾아 내용 변경 및 삽입";
+        // document.getElementById("aaa").style = "color: blue; font-size: 30px"; // aaa라는 아이디를 찾아 스타일 변경
+        // document.getElementById("image").src = "hello.jpg";
+        // // image라는 아이디를 찾아 src 속성 추가
+        // document.getElementById("image").setAttribute("title","이미지의 타이틀 삽입");
+        // // image라는 아이디를 찾아 속성값을 찾아서 재지정
+
+
+        // document.write(document.URL);
+
+
+        // document.getElementById("listcolor").style.color = "red";
+        // listId =  document.getElementById("listcolor");
+        // listId.style.color = "blue"
+        // listId라는 변수에 담아놓고 추후에 간단하게 사용 가능(재사용성 및 가독성 높이고 중복 제거, 유지보수 용이)
+        
+
+
+
+    </script>
+</body>
+</html>

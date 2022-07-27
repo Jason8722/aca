@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flx p.409~438</title>
+    <style>
+        .container {background-color: gray; display: flex;}
+        .container_w {width: 200px;}
+        .container_h {height: 200px;}
+        .container_wh {width: 200px; height: 200px;}
+        .container div {background-color: yellow; padding: 10px 20px; border: 1px solid #000; box-sizing: border-box;}
+
+        hr {margin: 50px}
+
+        .direction_row {flex-direction: row;}
+        .direction_row_re {flex-direction: row-reverse;}
+        .direction_column {flex-direction: column;}
+        .direction_column_re {flex-direction: column-reverse;}
+
+        .nowrap {flex-wrap: nowrap;}
+        .wrap {flex-wrap: wrap;}
+        .wrap_re {flex-wrap: wrap-reverse;}
+
+        .flow_row_wrap {flex-flow: row wrap;}
+        .flow_col_nowrap {flex-flow: column wrap;}
+
+        .justify_start {justify-content: flex-start;}
+        .justify_end {justify-content: end;}
+        .justify_center {justify-content: center;}
+        .justify_between {justify-content: space-between;}
+        .justify_around {justify-content: space-around;}
+
+        .align_start {align-items: flex-start;}
+        .align_end {align-items: flex-end;}
+        .align_center {align-items: center;}
+        .align_baseline {align-items: baseline;}
+        .align_stretch {align-items: stretch;}
+        
+        .align_self {align-self: flex-end; }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Flex : 부모요소에 display: flex; 속성 적용, 자식요소의 위치(배치)를 지정</h1>
+    <h2>flex-direction : 자식요소의 축과 방향을 설정</h2>
+    <h3>flex-direction: row; 가로 방향, 왼쪽>오른쪽으로 정렬</h3>
+    <div class="container direction_row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>flex-direction: row_reverse; 가로 방향, 오>왼 으로 정렬</h3>
+    <div class="container direction_row_re">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>flex-direction: column; 가로 방향, 오>왼 으로 정렬</h3>
+    <div class="container direction_column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>flex-direction: column; 가로 방향, 오>왼 으로 정렬</h3>
+    <div class="container direction_column_re">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2>flex-wrap : 자식요소의 줄바꿈 여부 설정</h2>
+    <h3>flex-wrap: nowrap; 줄바꿈 없이 한 줄에 표시. (기본값) 넘치면 부모의 width 무시</h3>
+    <div class="container container_w nowrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>flex-wrap: wrap; 줄바꿈해서 표시. 부모요소에 높이가 지정되어 있는 경우 기본적으로 높잇값을 꽉채우고, 줄바꿈시 균등하게 나눠들어간다.</h3>
+    <div class="container container_h wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>flex-wrap: wrap-reverse; 줄바꿈해서 표시. 부모요소에 높이가 지정되어 있는 경우 기본적으로 높잇값을 꽉채우고, 줄바꿈시 균등하게 나눠들어간다. 행 순서 반대로</h3>
+    <div class="container container_h wrap_re">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h2>flex-flow: flex-direction flex-wrap; 두 개 속성 띄어쓰기로 구분, 함께 작성</h2>
+    <h3>flex-flow: row wrap; 가로방향 왼>오, 넘치면 줄바꿈</h3>
+    <div class="container flow_row_wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h3>flex-flow: row wrap; 가로방향 왼>오, 넘치면 줄바꿈</h3>
+    <div class="container flow_col_nowrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h2>justify-content:플렉스 요소 간 정렬방법</h2>
+    <h3>justify-content: flex-start; 주축 시작점(기본값)</h3>
+    <div class="container justify_start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    
+    <h3>justify-content: flex-start; 주축 시작점</h3>
+    <div class="container justify_end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h3>justify-content: center; 중앙정렬</h3>
+    <div class="container justify_center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>justify-content: space-between; 양쪽 정렬</h3>
+    <div class="container justify_between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>justify-content: space-around; 양쪽 끝 정렬</h3>
+    <div class="container justify_around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h2>align-items: 교차축 기준 배치 방법(요소끼리의 배치)</h2>
+    <h3>align-items: flex-start; 교차축 시작점 기준</h3>
+    <div class="container container_h align_start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>align-items: flex-end; 교차축 끝점 기준</h3>
+    <div class="container container_h align_end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>align-items: center; 교차축 중간점 기준</h3>
+    <div class="container container_h align_center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h3>align-items: baseline; 문자 기준선</h3>
+    <div class="container container_h align_baseline">
+        <div>1</div>
+        <div style="font-size: 60px">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div style="font-size: 30px">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div style="font-size: 10px;">8</div>
+        <div style="font-size: 40px;">g</div>
+        <div>10</div>
+    </div>
+    <h3>align-items: stretch; 교차축 시작점 기준</h3>
+    <div class="container container_h align_stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="align_self">4</div> 
+        <!-- 원하는 항목에만 따로 적용하고 싶을때 -->
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+
+</body>
+</html>

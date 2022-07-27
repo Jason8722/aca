@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 p.475~480</title>
+</head>
+<body>
+    <script>
+
+        /* 연산자
+        a + b 에서 연산작업을 해주는 주체(+)를 연산자,
+        연산되는 대상 데이터(a,b)를 피연산자라고 한다. */
+
+        // 산술 연산자 : + , - , * , / , %
+/*         var num1 = 15;
+        var num2 = 2;
+        var result; // 결괏값 저장을 위한 빈 변수를 만들어놓음
+
+        result = num1 + num2;              // 15 + 2 
+        document.write(result + "<br>");   // 17
+        result = num1 - num2;              // 15 - 2 
+        document.write(result + "<br>");   // 13
+        result = num1 * num2;              // 15 * 2
+        document.write(result + "<br>");   // 30
+        result = num1 / num2;              // 15 * 2
+        document.write(result + "<br>");   // 7.5
+        result = num1 % num2;              // 15 % 2
+        document.write(result + "<br>");   // 1
+ */
+
+        // 문자 결합 연산자 : + 연산자르 기준으로 문자형 데이터를 적용하면 문자들의 결합(연결) 결과가 된다. 만약 숫자형 데이터가 끼어있다면 자동으로 문자형으로 형변환 되어 결합된다.
+
+/*         var a = "안녕";
+        var b = "하세요";
+        document.write(a+b);
+
+        var c = "2";
+        var d = "3";
+        var e = 4;
+        var f = true;
+        document.write(c+d+e+f);
+ */
+
+        // 대입 연산자(할당 연산자) : = , += , -= , *= , /= , %=
+        // 대입 연산자(=)는 우변의 데이터를 좌변의 변수에 저장할 때 사용
+        // 복합 대인 연산자(+= , -= , *= , /= , %=)는 산술 연산자와 대입 연산자가 복합적으로 적용되는 연산자
+/* 
+        var num1 = 10;
+        var num2 = 3;
+
+        num1 += num2;                  // num1 = num1 + num2; 10 + 3
+        document.write(num1 + "<br>"); // 13
+        num1 -= num2;                  // num1 = num1 - num2; 13 - 3
+        document.write(num1 + "<br>"); // 10
+        num1 *= num2;                  // 10 * 3
+        document.write(num1 + "<br>"); // 30
+        num1 /= num2;                  // 30 / 3
+        document.write(num1 + "<br>"); // 10
+        num1 %= num2;                  // 10 % 3
+        document.write(num1 + "<br>"); // 1 */
+/* 
+        var str = "<table border=1>";
+            str += "<tr>";
+            str += "<td>1</td><td>2</td><td>3</td>";
+            str += "</tr>";
+            str += "</table>";
+            document.write(str); */
+
+        
+
+        // 증감연산자 : ++ , --
+        // 1씩 증가(감소)
+        // 변수의 앞에 오느냐, 뒤에 오느냐에 따라 결괏값이 달라질 수 있다. (주의)
+
+/*         var a = 1;
+        a++;
+        document.write(a);
+
+        var b = 1;
+        ++b;
+        document.write(b);
+
+
+        // 후증가(후감소)
+        result = num2++; // result = num2를 먼저 대입해 저장해놓고 그 다음에 1을 더한다. (다음 줄 출력시 num2는 1이 추가된 상태로 나옴.)
+        
+        // 선증가(선감소)
+        result = ++num2; // result = 1 + num2 을 한 다음 그 값을 result에 저장
+ */
+
+
+
+
+        // 비교 연산자 : > , < , >= , <= , == , != , === , !==
+        // 결괏값이 true/ false를 반환
+        // == , != : 데이터타입은 무시하고 값만 비교
+        // === , !== : 데이터타이ㅃ까지 비교
+
+/*         var k = 10, m = "10";      // 이렇게 여러개의 변수를 한꺼번에 만들 수 있다.
+        document.write(k == 10);    //true
+        document.write(m == 10);    //true
+        document.write(k === 10);   //true
+        document.write(m === 10);   //false
+        document.write(k != 10);    //false
+        document.write(m != 10);    //false
+        document.write(k !== 10);    //false
+        document.write(m !== 10);    //true */
+
+        
+
+/*         // 논리연산자 : ||(or) , &&(and) , !(not)
+        var a = 10;
+        var b = 20;
+        var m = 30;
+        var n = 40;
+        var result;
+
+        result = a > b || b >= m || m >= n;
+        //         f        f         f
+        //                false
+        document.write(result + "<br>");
+
+        result = a > b || b >= m || m <= n;
+        //         f        f         t
+        //                true
+        // 결과 중 하나라도 tru가 나오면 true를 출력
+        document.write(result + "<br>");
+
+        result = a < b && b >= m && m <= n;
+        //         t        f         t
+        //                false
+        // 결과 중 하나라도 false가 나오면 false를 출력
+        document.write(result + "<br>");
+                
+        result = a < b && b <= m && m <= n;
+        //         t        t         t
+        //                true
+        // 결과가 모두 true여야 treu를 출력
+        document.write(result + "<br>");
+
+        result = !(a > b);
+        //         10> 20  false
+        //         true (반댓값)
+        document.write(result + "<br>"); */
+
+
+        // 삼항 조건 연산자 p.483
+        // 조건식 ?             코드1          :           코드2
+        //                 (true일 때 실행)          (false일 때 실행)
+        var a = 10;
+        var b = 3;
+        var result = a > b ? "a(10)가 b(3)보다 크면 실행(true)" : "a(10)가 b(3)보다 크지 않으면 실행(true)"
+
+        document.write(result);
+
+    </script>
+
+</body>
+</html>

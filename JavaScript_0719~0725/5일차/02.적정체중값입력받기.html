@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정 체중값 입력받아 결괏값 나타내기</title>
+</head>
+<body>
+    <script>
+        var name = window.prompt("당신의 이름은?");  // 사용자에게 입력창을 띄워 name 변수에 저장
+        var userHeight = window.prompt("당신의 신장은?");
+        var userWeight = window.prompt("당신의 체중은?");
+        
+        var normalWeight = (userHeight - 100) * 0.9;
+        document.write(normalWeight);
+        var result = userWeight >= normalWeight - 2 && userWeight <= normalWeight + 2; // and이므로 둘다 true여야 함
+        //              69             69.3      -2
+        if(result) {
+            document.write("적정")
+        } else {
+            document.write("체중관리필요")
+        }
+
+        result = result ? "적정체중입니다." : "적정 체중이 아닙니다." ;
+        document.write(name + "님은" + result);
+    </script>
+    
+</body>
+</html>
