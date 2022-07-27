@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS파일 내에 한국어 사용 시 css파일의 첫번째 줄에 인코딩 설정을 해주는 부분입니다. UTF-8은 다국어입니다. 작성하지 않을 경우, 한국어로 입력된 서체를 못불러오거나 할 수 있습니다. head태그 내에 meta태그로 입력한 charset과 같은 개념이지만 css파일 내에서 사용법이 다르니 숙지해주세요. */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 자식요소의 위치 지정 시 position:absolute;를 사용하여 지정할 경우 부모요소를 기준으로 위치를 잡으려면 position:relative/absolute/fixed를 부모요소에게 지정해주면 됩니다.
+    부모요소의 위치가 변경될 일이 없다면 position:relative만 넣으면 되고,
+    움직여야 된다면 relative와 상대위치값을 지정하거나, absolute와 절대위치를 지정하거나, fixed와 고정위치를 지정하면 됩니다. */
+
+    #wrap {
+        width: 800px;
+        height: 600px;
+        background-color: lightgray;
+        position: relative;
+        margin: auto;
+    }
+
+    #one {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        left: 200px;
+        border-radius: 20px;
+    }
+
+    #one_01 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 80px;
+        top: 80px;
+    }
+
+    #two {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        top: 200px;
+        border-radius: 20px;
+    }
+
+    #two_01 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #two_02 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #three {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+        border-radius: 20px;
+    }
+
+    #three_01 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #three_02 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #three_03 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 80px;
+        bottom: 80px;
+    }
+
+    #four {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        left: 600px;
+        top: 200px;
+        border-radius: 20px;
+    }
+
+    #four_01 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #four_02 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #four_03 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    #four_04 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    #five {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        left: 400px;
+        top: 200px;
+        border-radius: 20px;
+    }
+
+    #five_01 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #five_02 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #five_03 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    #five_04 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    #five_05 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 80px;
+        top: 80px;
+    }
+
+    #six {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        left: 200px;
+        top: 400px;
+        border-radius: 20px;
+    }
+
+    #six_01 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #six_02 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #six_03 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    #six_04 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    #six_05 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+    }
+
+    #six_06 {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 80px;
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding p.265~266</title>
+    <style>
+        * {margin: 0; padding: 0; }
+        div {width: 200px; height: 200px; background-color: rgb(145, 177, 187); margin-bottom: 10px;}
+
+        #box01{padding: 50px 0 0; height: 150px;}
+        /* 상단에서 글자를 50px만큼 띄울 경우, 높이값에서 늘어난 만큼(50px) 빼준다. */
+
+        #box02{padding: 0 0 0 25px; width: 175px;}
+        /* 좌측에서 글자를 25px만큼 띄울 경우 너빗값에서 늘어난 만큼(25px) 빼준다. */
+
+        #box03{padding: 75px 0 0 25px; width: 175px; height: 125px; }
+        /* 상단에서 75px만큼 띄우고, 좌측에서 25px만큼 띄울 경우. */
+        
+        #box04{padding: 25px 0 25px 50px; width: 150px; height: 150px; overflow-y: auto;}
+        /* 상,하 25px  좌 50px */
+
+        /* overflow: hidden; 넘치는 콘텐츠를 가려줍니다.
+        overflow: scroll; 넘치는 콘텐츠를 스크롤을 나타내어줍니다.
+        overflow-y: scroll; y축으로만 스크롤바가 표시됩니다.
+        overflow: auto; 콘텐츠가 넘치면 스크롤 표시, 넘치지 않으면 스크롤 없음
+        overflow: visable; (기본값) 흘러넘쳐도 보여줌 */
+        
+        #box05{padding: 10px; border: 10px solid red; box-sizing:  content-box;}
+        #box06{padding: 10px; border: 10px solid red; box-sizing:  border-box;}
+        /* box-sizing속성 p.328~330 
+        box-sizing: content-box; 패딩, 보더(테두리) 값이 박스의 크기에 포함되면서 크기가 늘어남
+        box-sizing: border-box; 패딩, 보더(테두리) 값이 콘텐츠영역에 포함되면서 박스 크기를 자동으로 계산해 빼주기 때문에 눈에 보이는 크기가 늘어나지 않고 유지됩니다. (늘어난만큼 안빼줘도 됨) 단 IE8버전 이하에서는 적용되지 않는 CSS3 속성입니다. */
+
+    </style>
+</head>
+<body>
+    <div id="box01">padding</div>
+    <div id="box02">padding</div>
+    <div id="box03">padding</div>
+    <div id="box04">이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.이번에는 줄이 여러 줄인 문장을 작성해보겠습니다.</div>
+    <div id="box05">content-box</div>
+    <div id="box06">border-box</div>
+</body>
+</html>

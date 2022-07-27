@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background속성 p.293~302</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        div {
+            width: 100%;
+            height: 800px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #box01 {
+            background-color: rgba(255,0,0,0.5); 
+            background-image: url(background/bg_01.jpg); 
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #box02 {
+            background-color: rgba(0,255,0,0.5); 
+            background-image: url(background/bg_02.jpg); 
+            background-size: contain; 
+            background-position: right;
+        }
+        #box03 {
+            background-color: rgba(0,0,255,0.5); 
+            background-image: url(background/bg_03.jpg); 
+            background-size: 100; 
+            background-position: bottom;
+            background-attachment: fixed;
+        }
+        #box04 {
+            background-color: rgba(255,255,0,0.5);
+            background-image: url(background/bg_04.jpg);
+            background-size: 500px 100px;
+            background-repeat: no-repeat;
+            background-position: 50px 100px;
+            background-attachment: fixed;
+        }
+        #box05 {
+            background-color: rgba(255,0,255,0.5);
+            background-image: url(background/bg_05.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+        #box06 {
+            background-color: rgba(0,255,255,0.5);
+            background-image: url(background/bg_06.gif);
+            background-repeat: repeat-y;
+            background-position: 50px;
+        }
+        #box07 {background:rgba(0,255,0,0.5)  url(background/bg_02.jpg) center / 500px fixed;}
+
+        /* 
+        백그라운드 속성 합쳐서 쓰기 p.301
+        background: color image position / size repeat origin clip attachment
+        background: color image repeat attachment / size repeat origin clip
+        실무에서 많이 합쳐쓰는 경우
+        background: url('이미지 경로') no-repeat center;
+        */
+               
+        /* 
+        background-position: 가로축(X축)숫자또는위치 세로축(Y)숫자또는위치;
+        ex: background-position: left; -> left center(생략)
+        한 개의 값만 넣으면 가로위치만 지정되고 세로는 center(생략)
+        ex: background-position: top; -> top center(생략)
+        두개의 값을 넣으면 가로 세로위치
+
+        background-position: center center; -> background-position:  center;
+        */
+
+        /*
+        background-size: cover;
+            요소에 이미지를 공백 없이 꽉 채울 수 있고, 이미지 비율을 유지, 이미지의 일부는 잘려보일 수 있음
+        
+        background-size: contain;
+            이미지 비율을 유지, 이미지가 잘리는 부분이 없게 박스에 온전이 꽉차게 보여줌. 
+            나머지 반복되는 부분이 보이거나 반복하지 않는 경우 공백이 보일 수 있다.
+
+        background-size: 값;
+            값이 하나만 있을 때는 width값으로 인식(height값은 비율에 맞게 자동 적용.auto.) 픽셀, 백분율(%)
+
+        background-size: 값1 값2;
+            값1은 width(너비), 값2는 height(높이). 비율 상관 없이 강제로 사이즈 지정
+        
+        배경 이미지 두장 이상 적용
+        background-image: url('이미지1'),url('이미지2');
+        background-size: 값1, 값2;
+            값1 : 이미지1의 너비(width), 값2: 이미지2의 너비(width);
+        background-repeat: no-repeat, repeat;
+        */
+    </style>
+</head>
+<body>
+    <div id="box01">박스01</div>
+    <div id="box02">박스02</div>
+    <div id="box03">박스03</div>
+    <div id="box04">박스04</div>
+    <div id="box05">박스05</div>
+    <div id="box06">박스06</div>
+    <div id="box07">박스07</div>
+
+</body>
+</html>

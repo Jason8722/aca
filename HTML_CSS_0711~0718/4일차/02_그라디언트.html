@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그라디언트 p.305~313</title>
+    <style>
+        #box01 {width: 300px; height: 150px; 
+            background-image: linear-gradient(to left, tomato, skyblue );}
+        /* background-image: linear-gradient(방향 또는 각도,색상1, 색상2) */
+        #box02 {width: 300px; height: 150px; 
+            background-image: linear-gradient(to bottom, rgba(127, 179, 32, 0.507), rgba(10, 72, 97, 0.527));}
+        /* 색상블록(색상정지점:color-stop)에는 rgb,rgba,hsl,hsla,색상명,헥사코드 모든 컬러 다누이가 들어갈 수 있음. 이때, 콤마와 괄호 등을 짝을 잘 맞춰서 사용할 것! */
+        #box03 {width: 300px; height: 150px; 
+            background-image: linear-gradient(to top right, red, green,yellow,blue);}
+            /* 방향은 모서리쪽으로 보내려면 두개의 방향 키워드를 같이 써주면 됩니다. (순서 상관X)
+            2개 이상~ 컬러를 여러 개 넣을 수 있음! */
+        #box04 {width: 300px; height: 150px;   
+            background-color: green;
+            /* 지원되지 않는 구 브라우저에서 나타낼 색상 */
+            background-image: -o-linear-gradient(45deg, green, red, blue);
+            background-image: -moz-linear-gradient(45deg, green, red, blue);
+            background-image: -webkit-linear-gradient(45deg, green, red, blue);
+            /* 웹브라우저 벤더 프리픽스(vendor prefix): 지원이 안되는 속성을 브라우저에서 지원할 수 있게끔 지정 */
+            background-image: linear-gradient(45deg, green , red , blue ) };
+            #box05 {width: 300px; height: 150px;   
+            background-image: linear-gradient(45deg, green 0%, red 30%, blue 80%) }  
+            /* 색상 블록 안에 색상중지점의 위치를 지정해줄 수 있습니다.
+            0%(시작지점색상) ~ 100%(종료지점색상)
+            퍼센트를 지정하지 않으면 자동으로 같은 비율로 나눠서 들어가게 됩니다. */
+        #box06 {width: 300px; height: 150px;   
+            background-image: radial-gradient(red,green,blue);}
+    </style>
+</head>
+<body>
+    <div id="box01"></div>
+    <div id="box02"></div>
+    <div id="box03"></div>
+    <div id="box04"></div>
+    <div id="box05"></div>
+    <div id="box06"></div>
+</body>
+</html>

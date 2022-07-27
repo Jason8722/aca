@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position속성 p.280~283</title>
+    <style>
+        .box {width: 100px; height: 100px; position: absolute;}
+        .red {background-color: red; left: 0; top: 0; z-index: 3;} 
+        .blue {background-color: blue; left: 50px; top: 50px; z-index: 2;}
+        .green {background-color: green; left: 100px; top: 100px; z-index: 1;}
+        .fixed {width: 100px; height: 100px; background-color: yellow; position:fixed; right: 50px; bottom: 50px;}
+
+        /* 
+        position:absolute; 속성은 절대 위치 좌표를 사용해 요소를 배치하는 것입니다. 기준점을 세워서 위치를 지정해줄 수 있습니다(top, bottom, left, right) 요소를 스티커처럼 상위요소를 기준으로 원하는 곳에 붙입니다.  
+        
+        position: relative; 속성은 상대 위치 좌표를 사용해 요소를 배치합니다. 원래 있던 위치(position: static; 기본 속성값으로 지정되어있는 위치)에서 원하는 만큼 요소를 이동시켜 줍니다. 
+
+        z-index 속성은 요소의 앞뒤 순서를 결정해줍니다. 앞뒤 순서는 특별히 변경해주기 전까지는 요소를 입력한 순서대로 나중에 입력한 것이 위로 올라옵니다. 범위는 무한대이며 그래서 가장 위에 항상 위치해야 하는 것들(ex: 네비게이션에 마우스를 올렸을 때 서브메뉴가 나타나는 경우, 레이어 팝업을 띄워야 하는 경우 등등)에는 z-index 값을 999999 이런 식으로 입력하기도 합니다. 한 페이지 내에 요소가 몇개가 들어갈 지 모르기 때문에 추후 수정이나 추가가 되더라도 항상 위에 있게 하기 위함. 양수 및 음수도 사용 가능. ★z-index 속성은 position값이 지정되어야만 사용 가능(static 제외)
+
+        position:absolute; 상위요소 기준으로 위치
+        position:fixed; 웹브라우저 기준으로 위치 고정
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box red" ></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="fixed"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

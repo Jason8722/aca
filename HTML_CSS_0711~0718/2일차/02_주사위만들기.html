@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위만들기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 자식요소가 부모요소를 기준으로 위치를 잡을 수 있게끔 설정해주려면 부모요소에게 position:relative; 속성을 적용시켜야 합니다. p.283  */
+        #box01 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            position: relative;
+        }
+        #dot01 {
+            width: 80px;
+            height: 80px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            position: absolute;
+            left: 110px;
+            top: 110px;
+        }
+
+        #box02 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            position: relative;
+        }
+        #dot02_01 {
+            width: 80px;
+            height: 80px;
+            background-color: turquoise;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #dot02_02 {
+            width: 80px;
+            height: 80px;
+            background-color: turquoise;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+
+        #box03 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: relative;
+        }
+        #dot03_01 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #dot03_02 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+        #dot03_03 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            right: 110px;
+            bottom: 110px;
+        }
+
+        #box04 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(120, 216, 136);
+            position: relative;
+        }
+        #dot04_01 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #dot04_02 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+        #dot04_03 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+        }
+        #dot04_04 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        #box05 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+        }
+        #dot05_01 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #dot05_02 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+        #dot05_03 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+        }
+        #dot05_04 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        #dot05_05 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 110px;
+            top: 110px;
+        }
+
+        #box06 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(101, 93, 199);
+            position: relative;
+        }
+        #dot06_01 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #dot06_02 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+        #dot06_03 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+        }
+        #dot06_04 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        #dot06_05 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            left: 15px;
+            top: 110px;
+        }
+
+        #dot06_06 {
+            width: 80px;
+            height: 80px;
+            background-color: honeydew;
+            border-radius: 50%;
+            position: absolute;
+            right: 15px;
+            top: 110px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="box01">
+        <div id="dot01">
+        </div>
+    </div>
+    <div id="box02">
+        <div id="dot02_01"></div>
+        <div id="dot02_02"></div>
+    </div>
+    <div id="box03">
+        <div id="dot03_01"></div>
+        <div id="dot03_02"></div>
+        <div id="dot03_03"></div>
+    </div>
+    <div id="box04">
+        <div id="dot04_01"></div>
+        <div id="dot04_02"></div>
+        <div id="dot04_03"></div>
+        <div id="dot04_04"></div>
+    </div>
+    <div id="box05">
+        <div id="dot05_01"></div>
+        <div id="dot05_02"></div>
+        <div id="dot05_03"></div>
+        <div id="dot05_04"></div>
+        <div id="dot05_05"></div>
+    </div>
+    <div id="box06">
+        <div id="dot06_01"></div>
+        <div id="dot06_02"></div>
+        <div id="dot06_03"></div>
+        <div id="dot06_04"></div>
+        <div id="dot06_05"></div>
+        <div id="dot06_06"></div>
+    </div>
+
+
+</body>
+
+</html>

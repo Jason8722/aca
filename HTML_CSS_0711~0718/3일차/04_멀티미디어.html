@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 오디오 태그 p.105~110</title>
+</head>
+<body>
+    <object data="http://www.nate.com" type="text/html" width="500" height="500"></object>
+    <iframe src="http://www.nate.com" frameborder="0" width="500" height="500"></iframe>
+    <!-- object태그를 iframe 태그와 비슷하게 사용됩니다. object태그는 html문서, 비디오, 오디오, pdf, 플러그인 등을 넣을 수 있으나 대부분의 브라우저가 플래시, 자바애플릿, 액티브엑스 등을 더이상 지원하지 않아 점점 사용빈도가 낮아지고 있습니다. embed태그 또한 사용을 권장하지 않습니다 -->
+
+    <audio src="멀티미디어/audio_sample.mp3" controls></audio>
+    <video src="멀티미디어/video_sample.mp4" controls autoplay muted
+    width="500" height="500"></video>
+
+    <!-- 브라우저 지원 여부에 따라 source태그를 사용해 여러 포맷의 비디오 파일을 지정해둡니다. -->
+    <video width="500" height="500" poster="poster_image.jpg" controls>
+        <source src="멀티미디어/video_sample.mp4" type="video/mp4">
+        <source src="비디오변환파일/video_sample.ogv" type="video/ogg">
+        <source src="비디오변환파일/video_sample.webm" type="video/webm">
+        이 영상을 보기 위해서는 HTML5를 지원하는 브라우저가 필요합니다.
+        <!-- video태그를 지원하지 않는 브라우저에서 표시될 내용인 대체텍스트(필수 입력 권장) -->
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FG9b6otZWkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

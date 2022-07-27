@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가시속성 p.269~270</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        div {width: 100px; height: 100px;}
+        #box01 {background: red;}
+        #box02 {background: green; display: none;}
+        #box02:hover {display: block;}
+        #box03 {background: blue;}
+        #box04 {background: red;}
+        #box05 {background: green; visibility: hidden;}
+        #box05:hover {visibility: visible;}
+        #box06 {background: blue;}
+        #box07 {background: rgba(255, 0, 0, 0);}
+        #box08 {background: red; opacity: 0;}
+        #box08:hover {opacity: 1;}
+        /* display:none;은 아예 태그 자체가 입력이 되지 않은것처럼 만들어줌(삭제)
+        visibility: hidden;은 태그를 '보이지 않게' 해줌(가림)
+        opacity: 0;은 태그가 있지만 '투명'해서 보이지 않게 해줌(투명함) */
+
+        p {background: yellow; width: 100px; height: 30px; margin: 10px; padding: 10px;
+        border: 10px solid red;}
+        /* display: block; width,height,margin,padding 등의 속성이 적용됨 */
+        a {background: orange; width: 100px; height: 30px; margin: 0px; padding: 10px;
+        border: 10px solid blue;}
+        /* display: inline; width X, height X, margin 0 (좌우), padding 0, border 0 (라인에 먹힘) */
+        
+        ul {list-style:none;}
+        #float {width: 300px; height: 50px; background-color: rgba(0, 0, 0, .3);}
+        #float li {width: 100px; height: 50px; background-color: rgba(255, 0, 0, .3); float: left;}
+        #inline-block {width: 300px; height: 50px; background-color: rgba(0, 0, 0, .3); font-size: 0;}
+        #inline-block li {width: 100px; height: 50px; background-color: rgba(255, 0, 0, .3);
+        display:inline-block; font-size: 16px;}
+        /* inline속성은 태그 사이의 띄어쓰기 또는 줄바꿈을 모두 띄어쓰기 한 칸으로 인식.
+        inline속성을 가진 태그의 여백을 없애기 위한 방법
+        1.margin값을 -4px정도 당겨줌(권장X)
+        2.display속성 대신 float:left를 사용. float속성은 떠있는 요소이기 때문에 부모요소에 사이즈가 지정되지 않은 경우 자식요소만큼 사이즈를 가질 수 없음. 또한, 뒤에 오는 요소에 clear:both로 해줘야 함
+        3.태그를 모두 붙여쓰기. (권장x 코드 지저분해짐)
+        4.띄어쓰기 한 칸이므로 부모요소에서 글자의 크기(font-size)를 0으로 지정 후 실제 적용하는 요소에서 글자 크기를 다시 한번 지정(부모의 속성을 자식이 상속받기 때문) */
+
+
+    </style>
+</head>
+<body>
+    <div id="box01">박스01</div>    
+    <div id="box02">박스02</div>    
+    <div id="box03">박스03</div>    
+    <hr>
+    <div id="box04">박스04</div>
+    <div id="box05">박스05</div>
+    <div id="box06">박스06</div>
+    <hr>
+    <div id="box07">박스07</div>
+    <div id="box08">박스08</div>
+    <hr>
+    <p>버튼1</p>
+    <p>버튼2</p>
+    <p>버튼3</p>
+    <a href="#">버튼4</a><a href="#">버튼5</a><a href="#">버튼6</a>
+    <hr>
+    <h2>float을 이용한 가로 정렬</h2>
+    <ul id="float">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+    </ul>
+    <h2>inline-block을 이용한 가로정렬</h2>
+    <ul id="inline-block">
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <li>메뉴6</li>
+    </ul>
+</body>
+</html>
