@@ -1,0 +1,161 @@
+/* @charset "utf-8"
+
+* {margin:0; padding: 0; border: 0;} */
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#wrap>:not(header) {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 데스크탑 */
+#wrap {
+    width: 960px;
+    height: 1460px;
+}
+
+header {
+    width: 940px;
+    height: 150px;
+    background-color: rgba(102, 115, 102, 0.3);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+header h1,
+header p {
+    padding-left: 20px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 960px;
+    height: 30px;
+
+}
+
+nav ul li {
+    width: 192px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.3);
+    float: left;
+}
+
+section {
+    width: 960px;
+    height: 600px;
+    background-color: aquamarine;
+    clear: both;
+}
+
+article {
+    width: 220px;
+    height: 280px;
+    float: left;                    /* float 속성이 적용된 요소들은 상, 하 마진이 겹쳐지지 않음*/
+    background-color: rgba(0, 0, 255, .3);
+    margin: 10px;
+}
+
+figure {
+    width: 220px;
+    height: 150px;
+    background-color: blueviolet;
+
+}
+
+footer {
+    width: 960px;
+    height: 100px;
+    background-color: yellow;
+    clear: both;
+}
+
+/* 태블릿 */
+@media screen and (max-width:959px) {
+    #wrap {
+        width: 100%;
+        height: 1860px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 20%;
+    }
+
+    section {
+        width: 100%;
+        height: 400px;
+    }
+
+    article {
+        width: 46.66666666666667%;
+        margin: 1.666666666666667%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:599px) {
+    #wrap {
+        width: 100%;
+        height: 2890px;
+    }
+
+    header {
+        width: 100%;
+        height: 180px;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+    }
+
+    nav ul li {
+        width: 33.33333333333333%;
+        height: 30px;
+    }
+
+    section {
+        width: 100%;
+        height: 200px;
+    }
+
+    article {
+        width: 94.44444444444444%;
+        /* float: none; */          /* float이 적용된 요소에 적용이 안됐던 것처럼 되돌리려면 float을 none으로 재지정하면 된다. */
+        margin: 2.777777777777778%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

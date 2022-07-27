@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+/* @font-face {
+    font-family: 'ROKAFSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body {/* font-family: 'ROKAFSansBold'; */
+    font-family: 'Noto Sans KR', sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 모바일 */
+#wrap {
+    width: 100%;
+    /* height: 4144px; */
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    width: 100%;
+    height: 30px;
+}
+
+nav ul li a {
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    background-color: crimson;
+    color: #fff;
+    line-height: 30px;
+}
+
+nav ul li a:hover {
+    background-color: black;
+}
+
+
+
+#main_visual {
+    display: none;
+}
+
+
+.main_img {
+    width: 96%;
+    /* height: 423px; */
+    background-color: rgba(255, 255, 0, .2);
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+.main_img img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main_img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
+
+.main_img a:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+.main_caption {
+    width: 100%;
+   /*  height: 200px; */
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#figure_container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* float요소 뒤에 클리어 해줄 때 float요소를 감싸는 부모박스의 ::after 영역에 빈 박스를 만들어 클리어 해주는 개념입니다. */
+
+
+
+
+/* 모바일 버튼 영역 */
+#mobile_btn {
+    width: 240px;
+    height: 60px;
+    margin: 50px auto;
+}
+
+#mobile_btn ul li {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 30px;
+}
+
+/* 마진을 양옆에 반반씩 줘서 부모의 크기를 마진까지 포함한 크기로 만들어줘도 된다. */
+
+#mobile_btn ul li:last-child {
+    margin-right: 0;
+}
+
+#mobile_btn ul li a span {
+    display: block;
+    text-indent: -9999px;
+}
+
+#mobile_btn ul li a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    /* height: 200px; */
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#ft_logo {
+    width: 100%;
+    height: 80px;
+    background-image: url("../img/footer_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer p {
+    width: 100%;
+    /* height: 80px; */
+}
+
+footer p a {color: #ccc;}
+
+footer p a:hover {text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿 */
+@media screen and (min-width:600px) and (max-width:959px) {
+
+    #wrap {
+        width: 100%;
+        /* height: 2250px; */
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 0;
+    }
+
+    nav ul li {
+        width: 25%;
+        float: left;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    #main_visual {
+        width: 100%;
+        height: 313px;
+     /*    background-image: url(../img/main_visual.jpg);
+        background-size: cover;
+        background-position: center; */
+        background: url(../img/main_visual.jpg) no-repeat center / cover;
+        display: block;
+        margin-bottom: 50px;
+    }
+    /* #main_visual img {
+        width: 100%;
+        vertical-align: top;
+    }  */
+    /* 비주얼 영역 이미지를 <img>태그로 넣을 경우*/ 
+
+    .main_img {
+        width: 48%;
+        /* height: 348px; */
+        margin: 0 1% 50px;
+        float: left;
+    }
+
+    .main_caption {
+        width: 100%;
+        /* height: 100px; */
+    }
+
+    #mobile_btn {
+        display: none;
+    }
+
+    footer {
+        /* clear: both; */
+        width: 100%;
+        overflow: hidden;
+        /* height: 100px; */
+        
+    }
+
+    #ft_logo {
+        width: 20%;
+        height: 60px;
+        background-size: contain;
+        float: left;
+        margin-right: 2%;
+    }
+
+    footer p {
+        width: 78%;
+        /* height: 60px; */
+        float: left;
+        text-align: left;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 데스크탑 */
+@media screen and (min-width:960px) {
+    #wrap {width: 960px; height: 1460px;}
+    
+    header {width: 960px; padding-left: 20px; text-align: left;}
+
+    nav {width: 960px; height: 30px; margin-bottom: 0;}
+    nav ul li {width: 240px; float: left;}
+    nav ul li a {width: 240px;}
+
+    #main_visual {width: 960px; height: 500px;  background: url(../img/main_visual.jpg) no-repeat center / cover; display: block; margin-bottom: 50px;}
+
+    .main_img {width: 225px; /*height: 280px;*/ float: left; margin: 0 20px 50px 0;}
+
+    .main_img:nth-of-type(4n) {margin-right: 0;}                    /* :nth-of-type 선택자는 해당 형제 요소들 안에서만 순서를 세기 때문에 태그가 다른 요소들은 포함하지 않는다. */
+
+    /* 이건 figure_container로 직접 피규어를 감싸서 자식요소가 main_img만 있어서 nth-child(4n)으로 세어도 가능하지만 감싸는 부모요소가 따로 없다면 그 상위 부모요소(wrap)의 자식의 몇번째인지 센다 */
+    
+    .main_caption {width: 225px; /* height: 100px; */}
+
+    #mobile_btn {display: none;}
+
+    footer {width: 960px; height: 120px; overflow: hidden;}
+    #ft_logo {width: 200px; height: 80px; float: left; margin-right: 20px; background-size: contain;}
+    footer p {width: 700px; height: 80px; float: left; text-align: left; font-size: 14px; padding-top: 10px;}
+}

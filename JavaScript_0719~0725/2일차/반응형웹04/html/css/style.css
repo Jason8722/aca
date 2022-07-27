@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;    
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* 모바일 */
+#wrap {
+    width: 1270px;
+    height: 8643px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#net_logo {
+    width: 635px;
+    height: 363px;
+    padding: 100px 50px;
+    background-color: rgba(255, 255, 0, 0.2);
+    box-sizing: border-box;
+    float: left;
+}
+#net_logo img {
+    width: 100%
+}
+
+header {
+    width: 1270px;
+    height: 2127px;
+    background-color: rgba(240, 248, 255, 0.382);
+    position: relative;
+}
+header nav {
+    width: 635px;
+    height: 363px;
+    float: left;
+    padding: 125px 60px;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    width: 500px;
+    height: 100px;
+    background-color: rgba(255, 0,255, 0.2);
+    float: left;
+}
+
+header nav ul li {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, .2);
+    float: left;
+    margin-right: 33px;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+header::after {
+    clear: both;
+}
+
+#main_story {
+    width: 1270px;
+    height: 1764px;
+    background-color: rgba(0, 255, 255, 0.292);
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;    
+}
+.story {
+    position: absolute;
+    bottom: 420px;
+    padding: 0 80px;
+    font-size: 60px;
+}
+#play_btn {
+    width: 420px;
+    height: 176px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 155px;
+    left: 33.46456692913386%;
+}
+
+#play_btn a {
+    display: block;
+    width: 420px;
+    height: 176px;
+    /* background-color: rgba(0, 0, 139, 0.261); */
+    margin: auto;
+    line-height: 176px;
+    font-size: 85px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#watching {
+    width: 1270px;
+    height: 1418px;
+    background-color: rgb(49, 49, 49);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#wat_text {
+    width: 1270px;
+    height: 321px;
+    background-color:  rgb(49, 49, 49);
+    line-height: 321px;
+}
+
+.wat_con {
+    width: 1190px;
+    height: 1020px;
+    background-color: rgb(49, 49, 49);
+    display: block;
+    overflow-x: scroll;
+   
+    position: relative;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.wat_con::-webkit-scrollbar {
+height: 40px; /*스크롤바의 너비*/
+
+}
+
+.wat_con::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 31, 38); /*스크롤바의 색상*/
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 100px;
+}
+
+.wat_con::-webkit-scrollbar-track {
+    background-color: rgb(29, 29, 29); /*스크롤바 트랙 색상*/
+    border-radius: 100px;
+}
+
+
+.wat {
+    width: 730px;
+    height: 430px;
+    position: absolute;
+    background-color: aqua;
+    /* margin: 0 40px 40px 0; */   
+}
+
+.w2 {
+    position: absolute;
+   left: 760px;
+}
+.w3 {
+    position: absolute;
+   top: 460px;
+}
+.w4 {
+    position: absolute;
+   left: 760px; top: 460px;
+}
+.w5 {
+    position: absolute;
+   left: 1520px;
+}
+.w6 {
+    position: absolute;
+   left: 1520px;
+   top: 460px;
+}
+
+#wat_box {
+    width: 80px;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(49, 49, 49); /* 스크롤바 오른쪽 부분 가리기 위한 박스 */
+}
+
+#news {
+    width: 1270px;
+    height: 1610px;
+    background-color: rgba(255, 217, 0, 0.147);
+    margin-bottom: 100px;
+    
+}
+#news h2 {
+    line-height:300px;
+}
+.news_content {
+    width: 1130px;
+    height: 1240px;
+    background-color: white;
+    margin: auto;
+    overflow-y: scroll;
+    padding: 50px;
+    text-align: left;
+    font-size: 60px;
+}
+.news_content::-webkit-scrollbar {
+    height: 40px; /*스크롤바의 너비*/
+    
+    }
+    
+    .news_content::-webkit-scrollbar-thumb {
+        background-color: rgb(216, 31, 38); /*스크롤바의 색상*/
+        background-clip: padding-box;
+        border: 4px solid transparent;
+        border-radius: 100px;
+    }
+    
+    .news_content::-webkit-scrollbar-track {
+        background-color: rgb(153, 153, 153); /*스크롤바 트랙 색상*/
+        border-radius: 100px;
+    }
+.news_content h3,h4,p{
+    color: black;
+}
+
+
+
+
+
+#new {
+    width: 1270px;
+    height: 2140px;
+    background-color: blueviolet;
+    margin-bottom: 100px;
+    overflow: hidden;
+    padding-right: 40px;
+    
+}
+#now_con{
+    overflow-y: scroll;
+    white-space: nowrap;
+    margin: 0 70px;
+    padding-right: 20px;
+}
+#now_con::-webkit-scrollbar {
+    height: 40px; /*스크롤바의 너비*/
+    
+    }
+    
+    #now_con::-webkit-scrollbar-thumb {
+        background-color: rgb(216, 31, 38); /*스크롤바의 색상*/
+        background-clip: padding-box;
+        border: 4px solid transparent;
+        border-radius: 100px;
+    }
+    
+    #now_con::-webkit-scrollbar-track {
+        background-color: rgb(153, 153, 153); /*  크롤바 트랙 색상*/
+        border-radius: 100px;
+    }
+#new h2 {
+    line-height:300px;
+}
+.now {
+    width: 1130px;
+    height: 480px;
+    margin-bottom:140px ;
+    box-sizing: border-box;
+    background-color: rgba(240, 248, 255, 0.151);
+}
+
+.now_img {
+    height: 100%;
+    padding-left: 150px;
+}
+.now:nth-child(2n) .now_img {
+
+    float: right;
+}
+
+
+
+
+footer {
+    width: 1270px;
+    background-color: rgba(0, 0, 139, 0.176);
+    padding: 60px;
+    box-sizing: border-box;
+    font-size: 30px;
+}

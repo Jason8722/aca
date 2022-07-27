@@ -1,0 +1,166 @@
+/* @charset "utf-8"
+
+* {margin:0; padding: 0; border: 0;} */
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#wrap>:not(header) {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 데스크탑 */
+    #wrap {
+        width: 960px;
+        height: 1460px;
+    }
+
+    header {
+        width: 920px;
+        height: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgba(102, 115, 102, 0.3);
+    }
+
+    nav {
+        width: 960px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        width: 192px;
+        height: 30px;
+        background-color: rgba(255, 0, 0, 0.3);
+        float: left;
+    }
+
+    section {
+        width: 960px;
+        height: 600px;
+        background-color: aquamarine;
+        clear: both;
+    }
+
+    article {
+        width: 220px;
+        height: 280px;
+        float: left;
+        background-color: rgba(0, 0, 255, .3);
+        margin: 10px;
+    }
+
+    figure {
+        width: 220px;
+        height: 150px;
+        background-color: blueviolet;
+
+    }
+
+    footer {
+        width: 960px;
+        height: 100px;
+        background-color: yellow;
+        clear: both;
+    }
+
+    /* 태블릿 */
+    @media screen and (max-width:601px) {
+    #wrap {
+        width: 600px;
+        height: 2000px;
+    }
+
+    header {
+        width: 560px;
+        height: 120px;
+    }
+
+    nav {
+        width: 600px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        width: 120px;
+        height: 30px;
+        float: left;
+    }
+
+    section {
+        width: 600px;
+        height: 600px;
+        clear: both;
+    }
+
+    article {
+        width: 280px;
+        height: 280px;
+    }
+
+    figure {
+        width: 280px;
+        height: 150px;
+    }
+
+    footer {
+        width: 600px;
+        height: 100px;
+    }
+}
+
+ /* 모바일 */
+ @media screen and (max-width:361px) {
+    #wrap {
+        width: 360px;
+        height: 2000px;
+    }
+
+    header {
+        width: 320px;
+        height: 150px;
+    }
+
+    nav {
+        width: 360px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        width: 120px;
+        height: 30px;
+        float: left;
+    }
+
+    section {
+        width: 360px;
+        height: 200px;
+        clear: both;
+    }
+
+    article {
+        width: 340px;
+        height: 280px;
+    }
+
+    figure {
+        width: 340px;
+        height: 150px;
+    }
+
+    footer {
+        width: 360px;
+        height: 100px;
+    }
+}
